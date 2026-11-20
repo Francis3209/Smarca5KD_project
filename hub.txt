@@ -1,0 +1,5 @@
+hub myTrackHub_Smarca5_data
+shortLabel My Smarca5 ATACseq and RNAseq Hub
+longLabel A collection of ATACseq and RNAseq tracks for Smarca5KD compared to control
+genomesFile genomes.txt
+email francesco.gandolfi@ieo.it
