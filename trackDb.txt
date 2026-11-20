@@ -27,7 +27,7 @@ centerLabelsDense off
 
     track CTRL1_R1_extend
     parent ATACseq
-    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/CTRL1_R1.extend.bw
+    bigDataUrl http://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/CTRL1_R1.extend.bw
     shortLabel ATAC CTRL1 extend
     longLabel CTRL1_R1 ATAC-seq Extend
     type bigWig
