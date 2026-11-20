@@ -1,0 +1,300 @@
+################################################################
+# trackDb.txt
+# ATAC-seq (12 tracks) + RNA-seq (16 tracks)
+# Controls: light blue (173,216,230) | Smarca5 KD: red (255,0,0)
+################################################################
+
+
+################################################################
+# ATAC-seq — composite track
+# 6 samples x 2 bigWigs (extend / extend.center) = 12 tracks
+################################################################
+
+track ATACseq
+compositeTrack on
+shortLabel ATAC-seq
+longLabel ATAC-seq — CTRL (light blue) and Smarca5 KD (red)
+type bigWig
+visibility full
+autoScale on
+alwaysZero on
+maxHeightPixels 100:50:8
+subGroup1 condition Condition CTRL=Control KD=Smarca5_KD
+subGroup2 trk Track_type extend=Extend extend_center=Extend_Center
+dimensions dimX=condition dimY=trk
+sortOrder condition=+ trk=+
+centerLabelsDense off
+
+    track CTRL1_R1_extend
+    parent ATACseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/CTRL1_R1.extend.bw
+    shortLabel ATAC CTRL1 extend
+    longLabel CTRL1_R1 ATAC-seq Extend
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL trk=extend
+
+    track CTRL1_R1_extend_center
+    parent ATACseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/CTRL1_R1.extend.center.bw
+    shortLabel ATAC CTRL1 ext.center
+    longLabel CTRL1_R1 ATAC-seq Extend Center
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL trk=extend_center
+
+    track CTRL2_R2_extend
+    parent ATACseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/CTRL2_R2.extend.bw
+    shortLabel ATAC CTRL2 extend
+    longLabel CTRL2_R2 ATAC-seq Extend
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL trk=extend
+
+    track CTRL2_R2_extend_center
+    parent ATACseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/CTRL2_R2.extend.center.bw
+    shortLabel ATAC CTRL2 ext.center
+    longLabel CTRL2_R2 ATAC-seq Extend Center
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL trk=extend_center
+
+    track CTRL3_R3_extend
+    parent ATACseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/CTRL3_R3.extend.bw
+    shortLabel ATAC CTRL3 extend
+    longLabel CTRL3_R3 ATAC-seq Extend
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL trk=extend
+
+    track CTRL3_R3_extend_center
+    parent ATACseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/CTRL3_R3.extend.bw
+    shortLabel ATAC CTRL3 ext.center
+    longLabel CTRL3_R3 ATAC-seq Extend Center
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL trk=extend_center
+
+    track Smarca5_KD1_R1_extend
+    parent ATACseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/Smarca5_KD1_R1.extend.bw
+    shortLabel ATAC KD1 extend
+    longLabel Smarca5_KD1_R1 ATAC-seq Extend
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD trk=extend
+
+    track Smarca5_KD1_R1_extend_center
+    parent ATACseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/Smarca5_KD1_R1.extend.center.bw
+    shortLabel ATAC KD1 ext.center
+    longLabel Smarca5_KD1_R1 ATAC-seq Extend Center
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD trk=extend_center
+
+    track Smarca5_KD2_R2_extend
+    parent ATACseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/Smarca5_KD2_R2.extend.bw
+    shortLabel ATAC KD2 extend
+    longLabel Smarca5_KD2_R2 ATAC-seq Extend
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD trk=extend
+
+    track Smarca5_KD2_R2_extend_center
+    parent ATACseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/Smarca5_KD2_R2.extend.center.bw
+    shortLabel ATAC KD2 ext.center
+    longLabel Smarca5_KD2_R2 ATAC-seq Extend Center
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD trk=extend_center
+
+    track Smarca5_KD3_R3_extend
+    parent ATACseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/Smarca5_KD3_R3.extend.bw
+    shortLabel ATAC KD3 extend
+    longLabel Smarca5_KD3_R3 ATAC-seq Extend
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD trk=extend
+
+    track Smarca5_KD3_R3_extend_center
+    parent ATACseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/ATAC_bigwigs/Smarca5_KD1_R1.extend.center.bw
+    shortLabel ATAC KD3 ext.center
+    longLabel Smarca5_KD3_R3 ATAC-seq Extend Center
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD trk=extend_center
+
+
+################################################################
+# RNA-seq — composite track
+# 8 samples x 2 bigWigs (fwd / rev) = 16 tracks
+# Forward and reverse tracks are listed consecutively per sample
+################################################################
+
+track RNAseq
+compositeTrack on
+shortLabel RNA-seq
+longLabel RNA-seq — CTRL (light blue) and Smarca5 KD (red), Fwd & Rev
+type bigWig
+visibility full
+autoScale on
+alwaysZero on
+maxHeightPixels 100:50:8
+subGroup1 condition Condition CTRL=Control KD=Smarca5_KD
+subGroup2 strand Strand fwd=Forward rev=Reverse
+dimensions dimX=condition dimY=strand
+sortOrder condition=+ strand=+
+centerLabelsDense off
+
+    track CTRL1_R1_fwd
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/CTRL1_R1.fwd.norm.bw
+    shortLabel CTRL1 fwd
+    longLabel CTRL1_R1 RNA-seq Forward
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL strand=fwd
+
+    track CTRL1_R1_rev
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/CTRL1_R1.rev.norm.bw
+    shortLabel CTRL1 rev
+    longLabel CTRL1_R1 RNA-seq Reverse
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL strand=rev
+
+    track CTRL2_R2_fwd
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/CTRL2_R2.fwd.norm.bw
+    shortLabel CTRL2 fwd
+    longLabel CTRL2_R2 RNA-seq Forward
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL strand=fwd
+
+    track CTRL2_R2_rev
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/CTRL2_R2.rev.norm.bw
+    shortLabel CTRL2 rev
+    longLabel CTRL2_R2 RNA-seq Reverse
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL strand=rev
+
+    track CTRL3_R3_fwd
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/CTRL3_R3.fwd.norm.bw
+    shortLabel CTRL3 fwd
+    longLabel CTRL3_R3 RNA-seq Forward
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL strand=fwd
+
+    track CTRL3_R3_rev
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/CTRL3_R3.rev.norm.bw
+    shortLabel CTRL3 rev
+    longLabel CTRL3_R3 RNA-seq Reverse
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL strand=rev
+
+    track CTRL4_R4_fwd
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/CTRL4_R4.fwd.norm.bw
+    shortLabel CTRL4 fwd
+    longLabel CTRL4_R4 RNA-seq Forward
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL strand=fwd
+
+    track CTRL4_R4_rev
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/CTRL4_R4.rev.norm.bw
+    shortLabel CTRL4 rev
+    longLabel CTRL4_R4 RNA-seq Reverse
+    type bigWig
+    color 173,216,230
+    subGroups condition=CTRL strand=rev
+
+    track Smarca5_KD1_R1_fwd
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/Smarca5_KD1_R1.fwd.norm.bw
+    shortLabel KD1 fwd
+    longLabel Smarca5_KD1_R1 RNA-seq Forward
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD strand=fwd
+
+    track Smarca5_KD1_R1_rev
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/Smarca5_KD1_R1.rev.norm.bw
+    shortLabel KD1 rev
+    longLabel Smarca5_KD1_R1 RNA-seq Reverse
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD strand=rev
+
+    track Smarca5_KD2_R2_fwd
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/Smarca5_KD2_R2.fwd.norm.bw
+    shortLabel KD2 fwd
+    longLabel Smarca5_KD2_R2 RNA-seq Forward
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD strand=fwd
+
+    track Smarca5_KD2_R2_rev
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/Smarca5_KD2_R2.rev.norm.bw
+    shortLabel KD2 rev
+    longLabel Smarca5_KD2_R2 RNA-seq Reverse
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD strand=rev
+
+    track Smarca5_KD3_R3_fwd
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/Smarca5_KD3_R3.fwd.norm.bw
+    shortLabel KD3 fwd
+    longLabel Smarca5_KD3_R3 RNA-seq Forward
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD strand=fwd
+
+    track Smarca5_KD3_R3_rev
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/Smarca5_KD3_R3.rev.norm.bw
+    shortLabel KD3 rev
+    longLabel Smarca5_KD3_R3 RNA-seq Reverse
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD strand=rev
+
+    track Smarca5_KD4_R4_fwd
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/Smarca5_KD4_R4.fwd.norm.bw
+    shortLabel KD4 fwd
+    longLabel Smarca5_KD4_R4 RNA-seq Forward
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD strand=fwd
+
+    track Smarca5_KD4_R4_rev
+    parent RNAseq
+    bigDataUrl https://www.bioinfo.ieo.eu/SMLGgroup/Tracks/Smarca5_Hepa16_cells/RNAseq_bigwigs/Smarca5_KD4_R4.rev.norm.bw
+    shortLabel KD4 rev
+    longLabel Smarca5_KD4_R4 RNA-seq Reverse
+    type bigWig
+    color 255,0,0
+    subGroups condition=KD strand=rev
