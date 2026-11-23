@@ -16,7 +16,7 @@ shortLabel ATAC-seq
 longLabel ATAC-seq — CTRL (light blue) and Smarca5 KD (red)
 type bigWig
 visibility full
-autoScale on
+autoScale group
 alwaysZero on
 maxHeightPixels 100:50:8
 subGroup1 condition Condition CTRL=Control KD=Smarca5_KD
