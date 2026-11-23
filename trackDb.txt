@@ -24,6 +24,7 @@ subGroup2 trk Track_type extend=Extend extend_center=Extend_Center
 dimensions dimX=condition dimY=trk
 sortOrder condition=+ trk=+
 centerLabelsDense off
+minLimit 0
 
     track CTRL1_R1_extend
     parent ATACseq
