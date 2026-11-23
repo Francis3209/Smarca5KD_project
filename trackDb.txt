@@ -161,7 +161,7 @@ centerLabelsDense off
     shortLabel CTRL1 fwd
     longLabel CTRL1_R1 RNA-seq Forward
     type bigWig
-    color 173,216,230
+    color 30,112,167
     subGroups condition=CTRL strand=fwd
 
     track CTRL1_R1_rev
@@ -170,7 +170,7 @@ centerLabelsDense off
     shortLabel CTRL1 rev
     longLabel CTRL1_R1 RNA-seq Reverse
     type bigWig
-    color 173,216,230
+    color 30,112,167
     subGroups condition=CTRL strand=rev
 
     track CTRL2_R2_fwd
@@ -179,7 +179,7 @@ centerLabelsDense off
     shortLabel CTRL2 fwd
     longLabel CTRL2_R2 RNA-seq Forward
     type bigWig
-    color 173,216,230
+    color 30,112,167
     subGroups condition=CTRL strand=fwd
 
     track CTRL2_R2_rev
@@ -188,7 +188,7 @@ centerLabelsDense off
     shortLabel CTRL2 rev
     longLabel CTRL2_R2 RNA-seq Reverse
     type bigWig
-    color 173,216,230
+    color 30,112,167
     subGroups condition=CTRL strand=rev
 
     track CTRL3_R3_fwd
@@ -197,7 +197,7 @@ centerLabelsDense off
     shortLabel CTRL3 fwd
     longLabel CTRL3_R3 RNA-seq Forward
     type bigWig
-    color 173,216,230
+    color 30,112,167
     subGroups condition=CTRL strand=fwd
 
     track CTRL3_R3_rev
@@ -206,7 +206,7 @@ centerLabelsDense off
     shortLabel CTRL3 rev
     longLabel CTRL3_R3 RNA-seq Reverse
     type bigWig
-    color 173,216,230
+    color 30,112,167
     subGroups condition=CTRL strand=rev
 
     track CTRL4_R4_fwd
@@ -215,7 +215,7 @@ centerLabelsDense off
     shortLabel CTRL4 fwd
     longLabel CTRL4_R4 RNA-seq Forward
     type bigWig
-    color 173,216,230
+    color 30,112,167
     subGroups condition=CTRL strand=fwd
 
     track CTRL4_R4_rev
@@ -224,7 +224,7 @@ centerLabelsDense off
     shortLabel CTRL4 rev
     longLabel CTRL4_R4 RNA-seq Reverse
     type bigWig
-    color 173,216,230
+    color 30,112,167
     subGroups condition=CTRL strand=rev
 
     track Smarca5_KD1_R1_fwd
@@ -233,7 +233,7 @@ centerLabelsDense off
     shortLabel KD1 fwd
     longLabel Smarca5_KD1_R1 RNA-seq Forward
     type bigWig
-    color 255,0,0
+    color 133,22,41
     subGroups condition=KD strand=fwd
 
     track Smarca5_KD1_R1_rev
@@ -242,7 +242,7 @@ centerLabelsDense off
     shortLabel KD1 rev
     longLabel Smarca5_KD1_R1 RNA-seq Reverse
     type bigWig
-    color 255,0,0
+    color 133,22,41
     subGroups condition=KD strand=rev
 
     track Smarca5_KD2_R2_fwd
@@ -251,7 +251,7 @@ centerLabelsDense off
     shortLabel KD2 fwd
     longLabel Smarca5_KD2_R2 RNA-seq Forward
     type bigWig
-    color 255,0,0
+    color 133,22,41
     subGroups condition=KD strand=fwd
 
     track Smarca5_KD2_R2_rev
@@ -260,7 +260,7 @@ centerLabelsDense off
     shortLabel KD2 rev
     longLabel Smarca5_KD2_R2 RNA-seq Reverse
     type bigWig
-    color 255,0,0
+    color 133,22,41
     subGroups condition=KD strand=rev
 
     track Smarca5_KD3_R3_fwd
@@ -269,7 +269,7 @@ centerLabelsDense off
     shortLabel KD3 fwd
     longLabel Smarca5_KD3_R3 RNA-seq Forward
     type bigWig
-    color 255,0,0
+    color 133,22,41
     subGroups condition=KD strand=fwd
 
     track Smarca5_KD3_R3_rev
@@ -278,7 +278,7 @@ centerLabelsDense off
     shortLabel KD3 rev
     longLabel Smarca5_KD3_R3 RNA-seq Reverse
     type bigWig
-    color 255,0,0
+    color 133,22,41
     subGroups condition=KD strand=rev
 
     track Smarca5_KD4_R4_fwd
@@ -287,7 +287,7 @@ centerLabelsDense off
     shortLabel KD4 fwd
     longLabel Smarca5_KD4_R4 RNA-seq Forward
     type bigWig
-    color 255,0,0
+    color 133,22,41
     subGroups condition=KD strand=fwd
 
     track Smarca5_KD4_R4_rev
@@ -296,5 +296,5 @@ centerLabelsDense off
     shortLabel KD4 rev
     longLabel Smarca5_KD4_R4 RNA-seq Reverse
     type bigWig
-    color 255,0,0
+    color 133,22,41
     subGroups condition=KD strand=rev
